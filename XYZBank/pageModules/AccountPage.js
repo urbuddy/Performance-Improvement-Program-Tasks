@@ -3,7 +3,11 @@ class AccountPage{
 
     /**
      * Verify Account Details
-     * @param {Object} customerDetails 
+     * @param {Object} customerDetails - Customer Details
+     * @param {string} customerDetails.firstName - Customer First Name
+     * @param {string} customerDetails.lastName - Customer Last Name
+     * @param {string} customerDetails.AcNo - Customer Account Number
+     * @param {string} customerDetails.currency - Currency of Bank Account
      */
     async verifyAccountDetails(customerDetails){
         await page.waitForSelector(Selector.accountHeader);

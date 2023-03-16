@@ -5,7 +5,10 @@ class AmountWithdrawForm{
 
     /**
      * Withdraw Amount Form
-     * @param {Object} withdrawalAmountDetails 
+     * @param {Object} withdrawalAmountDetails - Withdrawal Amount Details
+     * @param {string} withdrawalAmountDetails.amount - Amount to Withdraw  
+     * @param {string} withdrawalAmountDetails.responseText - Response Text after Withdraw the Amount
+     * @param {number} withdrawalAmountDetails.beforeTansactionAcBalance - Account Balance before the Transaction
      */
     async fillWithdrawAmountForm(withdrawalAmountDetails){
         await page.waitForNetworkIdle({idleTime: 100});

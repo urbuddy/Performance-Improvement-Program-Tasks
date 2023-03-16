@@ -3,7 +3,7 @@ class SubSpeciesPage{
 
     /**
      * Verify Pet ID
-     * @param {string} petId 
+     * @param {string} petId - Pet ID of Animal(Pet)
      */
     async verifyPetId(petId){
         await page.waitForXPath(Selector.tableCellValue(petId),{visible:true});
@@ -15,8 +15,8 @@ class SubSpeciesPage{
 
     /**
      * Get Item ID
-     * @param {string} petId 
-     * @returns {Object} Item ID and Price
+     * @param {string} petId - Pet ID of Animal(Pet)
+     * @returns {Object} - Item ID and Price of Product(Pet)
      */
     async getItemIdAndPrice(petId){
         let productDetailsLink = await page.waitForXPath(Selector.itemId(petId), {visible: true});

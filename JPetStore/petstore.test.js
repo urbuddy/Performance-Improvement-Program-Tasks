@@ -5,11 +5,11 @@ describe("Pet Store Site Automation", () =>{
         
         await homePage.openHomePageURL();
 
-        // await homePage.clickSignInBtn();
+        await homePage.clickSignInBtn();
 
-        // await signInPage.clickSignUpBtn();
+        await signInPage.clickSignUpBtn();
         let user= {
-            userName: "CCC",
+            userName: "DDD",
             password: "AAAbbb@123",
             firstName: "AAA",
             lastName: "BBB",
@@ -24,7 +24,7 @@ describe("Pet Store Site Automation", () =>{
             language: "english",
             favPet: "DOGS"
         };
-        // await signUpPage.fillSignUpForm(user);
+        await signUpPage.fillSignUpForm(user);
 
         await homePage.clickSignInBtn();
         await signInPage.fillSignInForm(user);

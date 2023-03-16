@@ -3,7 +3,11 @@ class TransactionPage{
 
     /**
      * Verify Transactions
-     * @param {Object} transactionDetails 
+     * @param {Object} transactionDetails - Transaction Details
+     * @param {string} transactionDetails.firstTransactionAmount - Transaction Amount of First Transaction
+     * @param {string} transactionDetails.firstTransactionStatus - Transaction Status of first Transaction
+     * @param {string} transactionDetails.secondTransactionAmount - Transaction Amount of Second Transaction
+     * @param {string} transactionDetails.secondTransactionStatus - Transaction Status of Second Transaction
      */
     async verifyTransactions(transactionDetails){
         await page.waitForNetworkIdle({idleTime: 500});

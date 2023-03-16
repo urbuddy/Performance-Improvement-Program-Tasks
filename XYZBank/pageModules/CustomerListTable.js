@@ -3,7 +3,11 @@ class CustomerListTable{
 
     /**
      * Verify Customer Details
-     * @param {Object} customerDetails 
+     * @param {Object} customerDetails - Customer Details
+     * @param {string} customerDetails.firstName - Customer First Name
+     * @param {string} customerDetails.lastName - Customer Last Name
+     * @param {string} customerDetails.postCode - Customer Postal Code
+     * @param {string} customerDetails.AcNo - Customer Account Number
      */
     async verifyCustomerDetails(customerDetails){
         await page.waitForXPath(Selector.tableCellValue(customerDetails.firstName));
@@ -27,7 +31,7 @@ class CustomerListTable{
 
     /**
      * Click on Delete Customer Account Button Method
-     * @param {string} firstName 
+     * @param {string} firstName - Customer First Name
      */
     async clickDeleteCustomerAccountBtn(firstName){
         let deleteCustomerAccountBtn = await page.waitForXPath(Selector.accountDeleteBtn(firstName), {visible: true});

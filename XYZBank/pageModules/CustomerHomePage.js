@@ -3,7 +3,7 @@ class CustomerHomePage {
 
     /**
      * Login Account Form
-     * @param {string} firstName
+     * @param {string} firstName - First Name of Customer
      */
     async fillLoginAccountForm(firstName){
         await page.waitForSelector(Selector.accountSelect);

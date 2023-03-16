@@ -55,7 +55,7 @@ class HomePage {
 
     /**
      * Click on Category Link
-     * @param {string} category 
+     * @param {string} category - Pet Category Name
      */
     async clickPetCategorySelection(category){
         let petSelection = await page.waitForSelector(Selector.petCategoryLink(category), {visible:true});

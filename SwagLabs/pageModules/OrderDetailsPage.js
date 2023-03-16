@@ -4,7 +4,12 @@ class OrderDetailsPage{
 
     /**
      * Verify order details
-     * @param {Object} details 
+     * @param {Object} details - Order Details
+     * @param {string} details.text - Order ID
+     * @param {string} details.deliveryService - Logistic and Services
+     * @param {string} details.price - Product Price 
+     * @param {string} details.taxCharges - Other Tax Charges
+     * @param {string} details.totalAmount -  total Amount to Pay
      */
     async verifyOrderDetails(details){
         await page.waitForSelector(Selector.orderId);

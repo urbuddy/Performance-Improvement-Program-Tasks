@@ -3,7 +3,11 @@ class AddCustomerForm{
 
     /**
      * Add New Customer Form
-     * @param {Object} customerDetails 
+     * @param {Object} customerDetails - Customer Details
+     * @param {string} customerDetails.firstName - Customer First Name
+     * @param {string} customerDetails.lastName - Customer Last Name
+     * @param {string} customerDetails.postCode - Customer Postal Code
+     * @param {string} customerDetails.responseText - Response Text after created Customer
      */
     async fillAddNewCustomerForm(customerDetails){
         await page.waitForSelector(Selector.inputField("First Name"));

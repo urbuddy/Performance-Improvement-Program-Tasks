@@ -3,7 +3,10 @@ class ProductDetailsPage {
 
     /**
      * Verify Product details
-     * @param {Object} productDetails 
+     * @param {Object} productDetails - Product Details
+     * @param {string} productDetails.itemId - Product ItemID
+     * @param {string} productDetails.price - Product Price
+     * @param {string} productDetails.species - Product Species
      */
     async verifyProductDetails(productDetails){
         await page.waitForXPath(Selector.boldItemId(productDetails.itemId), {visible:true});

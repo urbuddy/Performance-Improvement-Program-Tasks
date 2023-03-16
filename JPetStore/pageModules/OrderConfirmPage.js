@@ -3,8 +3,25 @@ class OrderConfirmPage{
 
     /**
      * Verify Billing and Shipping Details
-     * @param {Object} billingDetails 
-     * @param {Object} shippingDetails 
+     * @param {Object} billingDetails - Billing Details
+     * @param {string} billingDetails.firstName - Customer First Name 
+     * @param {string} billingDetails.lastName - Customer Last Name 
+     * @param {string} billingDetails.address1 - Customer Home Address
+     * @param {string} billingDetails.address2 - Customer City Area Address
+     * @param {string} billingDetails.city - Customer City Name 
+     * @param {string} billingDetails.state - Customer State Name 
+     * @param {string} billingDetails.zipCode - Customer Postal Code 
+     * @param {string} billingDetails.country - Customer Country Name 
+     * 
+     * @param {Object} shippingDetails - Shipping Details
+     * @param {string} shippingDetails.firstName - Customer First Name 
+     * @param {string} shippingDetails.lastName - Customer Last Name 
+     * @param {string} shippingDetails.address1 - Customer Home Address
+     * @param {string} shippingDetails.address2 - Customer City Area Address
+     * @param {string} shippingDetails.city - Customer City Name 
+     * @param {string} shippingDetails.state - Customer State Name 
+     * @param {string} shippingDetails.zipCode - Customer Postal Code 
+     * @param {string} shippingDetails.country - Customer Country Name 
      */
     async verifyBillingAndShippingDetails(billingDetails ,shippingDetails){
         await page.waitForXPath(Selector.tableCellValue(billingDetails.firstName), {visible: true});

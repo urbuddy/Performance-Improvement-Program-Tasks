@@ -3,7 +3,10 @@ class CartPage{
 
     /**
      * Verify Cart Product Details
-     * @param {Object} productDetails 
+     * @param {Object} productDetails - Product Details
+     * @param {string} productDetails.itemId - Product ItemID
+     * @param {string} productDetails.price - Product Price
+     * @param {string} productDetails.petID - Product PetID
      */
     async verifyCartProduct(productDetails){
         await page.waitForXPath(Selector.link(productDetails.itemId), {visible: true});

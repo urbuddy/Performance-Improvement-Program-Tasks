@@ -6,7 +6,20 @@ class BillingDetailsForm{
 
     /**
      * Billing Details Form
-     * @param {Object} billingDetails 
+     * @param {Object} billingDetails - Billing Details
+     * @param {string} billingDetails.cardType - Credit Card Name
+     * @param {string} billingDetails.creditCard - Credit Card Number
+     * @param {string} billingDetails.expiryDate - Credit Card Expiry Date
+     * @param {string} billingDetails.firstName - Customer First Name 
+     * @param {string} billingDetails.lastName - Customer Last Name 
+     * @param {string} billingDetails.address1 - Customer Home Address
+     * @param {string} billingDetails.address2 - Customer City Area Address
+     * @param {string} billingDetails.city - Customer City Name 
+     * @param {string} billingDetails.state - Customer State Name 
+     * @param {string} billingDetails.zipCode - Customer Postal Code 
+     * @param {string} billingDetails.country - Customer Country Name 
+     * @param {boolean} billingDetails.shippingAddressRequired - Is Shipping Address different?(Yes: true/ No: false)
+     * @param {string} billingDetails.totalPrice - total Charges 
      */
     async fillBillingDetailsForm(billingDetails){
         await page.waitForNetworkIdle({idleTime: 100});
@@ -40,8 +53,30 @@ class BillingDetailsForm{
 
     /**
      * Billing and Shipping Details Form
-     * @param {Object} billingDetails 
-     * @param {Object} shippingDetails 
+     * @param {Object} billingDetails - Billing Details
+     * @param {string} billingDetails.cardType - Credit Card Name
+     * @param {string} billingDetails.creditCard - Credit Card Number
+     * @param {string} billingDetails.expiryDate - Credit Card Expiry Date
+     * @param {string} billingDetails.firstName - Customer First Name 
+     * @param {string} billingDetails.lastName - Customer Last Name 
+     * @param {string} billingDetails.address1 - Customer Home Address
+     * @param {string} billingDetails.address2 - Customer City Area Address
+     * @param {string} billingDetails.city - Customer City Name 
+     * @param {string} billingDetails.state - Customer State Name 
+     * @param {string} billingDetails.zipCode - Customer Postal Code 
+     * @param {string} billingDetails.country - Customer Country Name 
+     * @param {boolean} billingDetails.shippingAddressRequired - Is Shipping Address different?(Yes: true/ No: false)
+     * @param {string} billingDetails.totalPrice - total Charges 
+     * 
+     * @param {Object} shippingDetails - Shipping Details
+     * @param {string} shippingDetails.firstName - Customer First Name 
+     * @param {string} shippingDetails.lastName - Customer Last Name 
+     * @param {string} shippingDetails.address1 - Customer Home Address
+     * @param {string} shippingDetails.address2 - Customer City Area Address
+     * @param {string} shippingDetails.city - Customer City Name 
+     * @param {string} shippingDetails.state - Customer State Name 
+     * @param {string} shippingDetails.zipCode - Customer Postal Code 
+     * @param {string} shippingDetails.country - Customer Country Name 
      */
     async fillBillingAndShippingDetailsForms(billingDetails, shippingDetails){
         if(billingDetails.shippingAddressRequired){

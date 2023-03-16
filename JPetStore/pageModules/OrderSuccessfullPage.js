@@ -3,7 +3,7 @@ class OrderSuccessfullPage {
 
     /**
      * Verify Pet Ordered
-     * @param {string} text 
+     * @param {string} text - Order Confirmed Text
      */
     async verifyPetOrdered(text){
         await page.waitForSelector(Selector.responseText);
@@ -11,8 +11,12 @@ class OrderSuccessfullPage {
     }
 
     /**
-     * Verify Price and Cart Details 
-     * @param {Object} details 
+     * Verify Price and Card Details 
+     * @param {Object} details - Price and Cart Details 
+     * @param {string} details.cardType - Credit Card Name
+     * @param {string} details.creditCard - Credit Card Number
+     * @param {string} details.expiryDate - Credit Card Expiry Date
+     * @param {string} details.totalPrice - Total Charges
      */
     async verifyPriceAndCardDetails(details){
         await page.waitForXPath(Selector.tableCellValue(details.cardType), {visible: true});

@@ -13,7 +13,10 @@ class SignInPage {
 
     /**
      * Sign In Form
-     * @param {Object} userDetails 
+     * @param {Object} userDetails - Customer Details
+     * @param {string} userDetails.userName - Customer User Name
+     * @param {string} userDetails.password - Customer Password
+     * @param {string} userDetails.firstName - Customer First Name
      */
     async fillSignInForm(userDetails){
         await page.waitForNetworkIdle({idleTime: 100});

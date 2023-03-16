@@ -3,7 +3,10 @@ class ProductDetailsPage{
 
     /**
      * Verify product details
-     * @param {Object} productDetails 
+     * @param {Object} productDetails - Product Details
+     * @param {string} productDetails.name - Product Name
+     * @param {string} productDetails.price - Product Price
+     * @param {string} productDetails.description - Product Description
      */
     async verifyProductDetails(productDetails){
         await page.waitForSelector(Selector.product, {visible: true});
@@ -18,7 +21,7 @@ class ProductDetailsPage{
 
     /**
      * Verify product details for problem user
-     * @param {string} productName 
+     * @param {string} productName - Product Name 
      */
     async verifyProductDetailsForProblemUser(productName){
         await page.waitForSelector(Selector.product, {visible: true});

@@ -3,7 +3,10 @@ class OrderSuccessfullPage{
 
     /**
      * Verify product ordered
-     * @param {Object} result 
+     * @param {Object} result - Object of Details of Product ordered
+     * @param {string} result.processCompleteText - Order Process complete Text 
+     * @param {string} result.greetingText - Greeting Text
+     * @param {string} result.message - Order Confirmed Text
      */
     async verifyProductOrdered(result){
         await page.waitForSelector(Selector.titleText);

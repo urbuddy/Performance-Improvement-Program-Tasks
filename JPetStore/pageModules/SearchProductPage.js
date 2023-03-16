@@ -3,7 +3,9 @@ class SearchProductPage {
 
     /**
      * Verify Searched Product
-     * @param {Object} searchedProduct 
+     * @param {Object} searchedProduct - Searched Product Details
+     * @param {number} searchedProduct.productLength - Total Number of Product searched By Name
+     * @param {string} searchedProduct.value - Searched Product Name
      */
     async verifySearchedProduct(searchedProduct){
         await page.waitForSelector(Selector.tableRows);

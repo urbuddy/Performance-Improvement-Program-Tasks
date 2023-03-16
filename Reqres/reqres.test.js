@@ -149,14 +149,7 @@ describe('Reqres API Automation', () => {
         expect(res.status).toEqual(201);
         expect(res.data.name).toEqual(obj.name);
         expect(res.data.job).toEqual(obj.job);
-        let id = res.data.id;
-        expect(id).not.toBeNull();
-
-        // console.log(id);
-        // let response = await get(`/api/users/${id}`);
-        // console.log(response);
-        // response = await get(`/api/users?ID=${id}`);
-        // console.log(response);
+        expect(res.data.id).not.toBeNull();
     });
    
     test("Update(Put Request) Users Data Response Verification Test", async () => {

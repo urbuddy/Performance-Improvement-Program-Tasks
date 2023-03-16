@@ -3,7 +3,23 @@ class SignUpPage {
 
     /**
      * Sign Up Form
-     * @param {Object} userDetails 
+     * @param {Object} userDetails - Customer Details
+     * @param {string} userDetails.firstName - Customer First Name 
+     * @param {string} userDetails.lastName - Customer Last Name 
+     * @param {string} userDetails.address1 - Customer Home Address
+     * @param {string} userDetails.address2 - Customer City Area Address
+     * @param {string} userDetails.city - Customer City Name 
+     * @param {string} userDetails.state - Customer State Name 
+     * @param {string} userDetails.zipCode - Customer Postal Code 
+     * @param {string} userDetails.country - Customer Country Name
+     * @param {string} userDetails.email - Customer Email 
+     * @param {string} userDetails.phone - Customer Contact Number
+     * @param {string} userDetails.email - Customer Email 
+     * @param {string} userDetails.phone - Customer Contact Number 
+     * @param {string} userDetails.userName - Customer User Name
+     * @param {string} userDetails.password - Customer Password
+     * @param {string} userDetails.language - Customer Language
+     * @param {string} userDetails.favPet - Customer Favorite Pet
      */
     async fillSignUpForm(userDetails){
         await page.waitForNetworkIdle({idleTime: 100});

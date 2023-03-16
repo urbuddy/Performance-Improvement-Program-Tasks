@@ -3,7 +3,15 @@ class ShippingDetailsForm {
 
     /**
      * Shipping Details Form 
-     * @param {Object} shippingDetails 
+     * @param {Object} shippingDetails - Shipping Details
+     * @param {string} shippingDetails.firstName - Customer First Name 
+     * @param {string} shippingDetails.lastName - Customer Last Name 
+     * @param {string} shippingDetails.address1 - Customer Home Address
+     * @param {string} shippingDetails.address2 - Customer City Area Address
+     * @param {string} shippingDetails.city - Customer City Name 
+     * @param {string} shippingDetails.state - Customer State Name 
+     * @param {string} shippingDetails.zipCode - Customer Postal Code 
+     * @param {string} shippingDetails.country - Customer Country Name 
      */
     async fillShippingDetailsForm(shippingDetails){
         await page.waitForNetworkIdle({idleTime: 100});

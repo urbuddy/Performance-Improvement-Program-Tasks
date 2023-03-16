@@ -5,7 +5,10 @@ class AmountDepositForm{
 
     /**
      * Deposit Amount Form
-     * @param {Object} depositAmountDetails 
+     * @param {Object} depositAmountDetails - Deposite Amount Details
+     * @param {string} depositAmountDetails.amount - Amount to Deposite  
+     * @param {string} depositAmountDetails.responseText - Response Text after Deposite the Amount
+     * @param {number} depositAmountDetails.beforeTansactionAcBalance - Account Balance before the Transaction
      */
     async fillDepositAmountForm(depositAmountDetails){
         await page.waitForSelector(Selector.inputField("amount"));

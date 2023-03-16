@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "HEADLESS=true RETRIES=0 jest --config ./jest.config.js",
-    "test1": "HEADLESS=false RETRIES=0 jest --config ./jest.config.js",
-    "docs": "jsdoc -c ./jsdoc.json"
+    "test1": "HEADLESS=false RETRIES=0 jest --config ./jest.config.js"
   },
   "devDependencies": {
     "jest": "^29.4.3",
@@ -13,7 +12,6 @@
     "jest-puppeteer": "^7.0.1",
     "jest-retries": "^1.0.1",
     "jest-stare": "^2.5.0",
-    "jsdoc": "^4.0.2",
     "puppeteer": "^19.7.1"
   }
 }

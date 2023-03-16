@@ -3,8 +3,8 @@ class SubCategoryPage{
 
     /**
      * Get Pet ID
-     * @param {string} subCategory 
-     * @returns {string} Pet ID
+     * @param {string} subCategory - Sub Category of Pet
+     * @returns {string} - Pet ID
      */
     async getPetId(subCategory){
         let subCategoryOfPet = await page.waitForXPath(Selector.categorySelector(subCategory));

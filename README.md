@@ -22,7 +22,8 @@ In this program there is a four tasks to complete are as follows:
         II.  Swag Labs Site Automation.
         III. Pet Store Site Automation.
 
-    2. Learn about API methods and libraries which can be used to perform http requests and operations(like superagent, axios)
+    2. Learn about API methods and libraries which can be used to perform http requests and operations(like superagent, axios).
+
     Expectations:
         ● Create some scenarios to test out API requests(use https://reqres.in/)
         ● Use http methods like POST, GET , PUT , DELETE, PATCH and create test scripts
@@ -34,7 +35,8 @@ In this program there is a four tasks to complete are as follows:
     Result: Here I created a API test script with all expectations, The script name is:
         ● Reqres API Automation.
 
-    3. Learn about git and its basic commands
+    3. Learn about git and its basic commands.
+
     Expectations:
         ● Should have knowledge of basic commands and how to execute them.
         ● Create a separate repository and push all the tasks into that repository.
@@ -43,7 +45,8 @@ In this program there is a four tasks to complete are as follows:
     
     Result: Here I created a Performance-Improvement-Program-Tasks Repository and upload all the tasks in that Repository.
 
-    4. Learn about JSDocs and how to use them
+    4. Learn about JSDocs and how to use them.
+    
     Expectations:
         ● Use JSdocs in UI automation methods and also in API methods.
 

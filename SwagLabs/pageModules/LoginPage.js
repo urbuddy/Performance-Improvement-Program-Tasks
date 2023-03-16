@@ -1,6 +1,7 @@
 const Selector = require("../Selectors/Selectors");
 
 class LoginPage{
+    
     /**
      * Open home page by using URL
      */
@@ -10,8 +11,10 @@ class LoginPage{
 
     /**
      * Fill login form 
-     * @param {Object} userDetails 
-     * @param {string} text 
+     * @param {Object} userDetails - User Details
+     * @param {string} userDetails.userName - User Name
+     * @param {string} userDetails.password - User Password
+     * @param {string} text - Error Text
      */
     async fillLoginForm(userDetails, text){
         await page.waitForSelector(Selector.userName);

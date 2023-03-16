@@ -4,7 +4,7 @@ class HomePage{
 
     /**
      * Verify total no. of products method
-     * @param {number} value 
+     * @param {number} value - Total Number of Products
      */
     async verifyNoOfProducts(value){
         await page.waitForSelector(Selector.allProducts, {visible: true});
@@ -14,7 +14,7 @@ class HomePage{
 
     /**
      * Open product details page method
-     * @param {string} productName 
+     * @param {string} productName - Product Name
      */
     async openProductsDetails(productName){
         let productLink = await page.waitForXPath(Selector.productDetails(productName));

@@ -5,8 +5,8 @@ class APIRequestMethods{
 
     /**
      * GET HTTP Request Method
-     * @param {string} URL 
-     * @returns response
+     * @param {string} URL - Path of Resource
+     * @returns {Object} - Object of Response or Error
      */
     async get(URL){
         let res;
@@ -24,9 +24,9 @@ class APIRequestMethods{
 
     /**
      * POST HTTP Request Method
-     * @param {string} URL 
-     * @param {object} obj 
-     * @returns response
+     * @param {string} URL - Path of Resource
+     * @param {object} obj - Object of Input Data 
+     * @returns {Object} - Object of Response or Error
      */
     async post(URL, obj){
         let res;
@@ -44,9 +44,9 @@ class APIRequestMethods{
 
     /**
      * PUT HTTP Request Method
-     * @param {string} URL 
-     * @param {object} obj 
-     * @returns response
+     * @param {string} URL - Path of Resource
+     * @param {object} obj - Object of Input Data 
+     * @returns {Object} - Object of Response or Error
     */
     async put(URL, obj){
         let res;
@@ -64,9 +64,9 @@ class APIRequestMethods{
 
     /**
      * PATCH HTTP Request Method
-     * @param {string} URL 
-     * @param {object} obj 
-     * @returns response
+     * @param {string} URL - Path of Resource
+     * @param {object} obj - Object of Input Data 
+     * @returns {Object} - Object of Response or Error
     */
     async patch(URL, obj){
         let res;
@@ -84,8 +84,8 @@ class APIRequestMethods{
 
     /**
      * DELETE HTTP Request Method
-     * @param {string} URL 
-     * @returns response
+     * @param {string} URL - Path of Resource
+     * @returns {Object} - Object of Response or Error
     */
     async Delete(URL){
         let res;
