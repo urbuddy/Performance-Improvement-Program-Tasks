@@ -1,0 +1,287 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 15,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 15,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1678951741776,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 15,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1678951752183,
+        "runtime": 10346,
+        "slow": true,
+        "start": 1678951741837
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "/home/harshal_gawali/Java Scripts Tutorial/Puppeteer Tutorials/Reqres/reqres.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 348,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Users Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Users Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 262,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Single User Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Single User Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 241,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Single User Data Not Found Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Single User Data Not Found Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 245,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Colors Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Colors Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 103,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Single Color Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Single Color Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 500,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Color Data Not Found Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Color Data Not Found Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 509,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Create Users Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Create Users Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 606,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Update(Put Request) Users Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Update(Put Request) Users Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 597,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Update(Patch Request) Users Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Update(Patch Request) Users Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 518,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Delete Users Data Response Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Delete Users Data Response Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 497,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Register Successful Response Data Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Register Successful Response Data Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 647,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Register Unsuccessful Response Data Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Register Unsuccessful Response Data Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 818,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Login Successful Response Data Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Login Successful Response Data Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 512,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Login Unsuccessful Response Data Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Login Unsuccessful Response Data Verification Test"
+        },
+        {
+          "ancestorTitles": [
+            "Reqres API Automation"
+          ],
+          "duration": 3714,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Reqres API Automation Delay Response Response Data Verification Test",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Delay Response Response Data Verification Test"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}
