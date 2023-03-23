@@ -9,7 +9,7 @@ describe("Swag Labs Site Automation", () => {
             password: "secret_sauce"
         }
         await loginPage.fillLoginForm(user);
-        await homePage.verifyNoOfProducts(6)
+        await homePage.verifyNoOfProducts(6);
         let productName = "Sauce Labs Backpack";
         await homePage.openProductsDetails(productName);
         let product = {

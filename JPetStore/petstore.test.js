@@ -9,7 +9,7 @@ describe("Pet Store Site Automation", () =>{
 
         await signInPage.clickSignUpBtn();
         let user= {
-            userName: "DDD",
+            userName: "EEE",
             password: "AAAbbb@123",
             firstName: "AAA",
             lastName: "BBB",

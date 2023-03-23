@@ -2,7 +2,7 @@ const { homePage, accountPage, managerHomePage, addCustomerForm, openAccountForm
 
 describe("XYZ Bank Web-Site Automation", () =>{
     
-    test("Login as Manager", async() => {
+    test("XYZ Bank Web-Site Automation", async() => {
         await homePage.openHomePage();
         await homePage.clickManagerLoginBtn()
 
