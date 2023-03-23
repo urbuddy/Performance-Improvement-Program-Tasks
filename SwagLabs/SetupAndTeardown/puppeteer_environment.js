@@ -3,7 +3,7 @@ const os = require('os');
 const path = require('path');
 const puppeteer = require('puppeteer');
 const NodeEnvironment = require('jest-environment-node').TestEnvironment;
-
+const { retryCount } = require("./puppeteer.config");
 const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup');
 
 class PuppeteerEnvironment extends NodeEnvironment {
@@ -30,6 +30,15 @@ class PuppeteerEnvironment extends NodeEnvironment {
     });
   }
   
+  async handleTestEvent(event, state) {
+    if (event.name == 'test_fn_failure') {
+      if (state.currentlyRunningTest.invocations > retryCount) {
+        const testName = state.currentlyRunningTest.name;
+        await this.global.page.screenshot({ path: `${testName}.png` });
+      }
+    }
+  }
+
   async teardown() {
     if (this.global.__BROWSER_GLOBAL__) {
       await this.global.page.close();
