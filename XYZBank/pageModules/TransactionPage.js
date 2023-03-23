@@ -10,7 +10,7 @@ class TransactionPage{
      * @param {string} transactionDetails.secondTransactionStatus - Transaction Status of Second Transaction
      */
     async verifyTransactions(transactionDetails){
-        await page.waitForNetworkIdle({idleTime: 500});
+        await page.waitForNetworkIdle({idleTime: 100});
         await page.waitForSelector(Selector.transactionList);
         let transactions = await page.$$(Selector.transactionList);
         expect(transactions.length).toBe(2);

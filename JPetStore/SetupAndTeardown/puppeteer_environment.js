@@ -29,14 +29,6 @@ class PuppeteerEnvironment extends NodeEnvironment {
       height: 900
     });
   }
-
-  async handleTestEvent(event, state) {
-    if (event.name == 'test_fn_failure') {
-        const testName = state.currentlyRunningTest.name;
-        // Take a screenshot at the point of failure
-        await this.global.page.screenshot({ path: `screenshots/${testName}.png` });
-    }
-  }
   
   async teardown() {
     if (this.global.__BROWSER_GLOBAL__) {

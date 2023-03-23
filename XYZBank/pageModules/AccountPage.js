@@ -56,10 +56,9 @@ class AccountPage{
      * Click on Show Transaction Button
      */
     async clickShowTransactionBtn(){
-        await page.waitForNetworkIdle({idleTime: 500});
+        await page.waitForNetworkIdle({idleTime: 100});
         let transactionPage = await page.waitForSelector(Selector.button("transactions"));
-        await transactionPage.click(); 
-        await page.waitForNetworkIdle({idleTime: 500});
+        await transactionPage.click({ delay: 500 });
     }
 }
 module.exports = AccountPage;
